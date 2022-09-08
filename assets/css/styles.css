@@ -1,0 +1,324 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+.container {
+  background: var(--body-bg-color);
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+  width: 21.75rem;
+}
+@media screen and (max-width:768px) {
+  .perfil {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.perfil__profile {
+  align-items: center;
+  background: var(--bg-cards);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 18.25rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.profile__avatar {
+  border: solid 2px #00FF00;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  width: 8rem;
+}
+
+.profile__nome {
+  color: var(--text-color);
+  font-size: 1.43rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.profile__descricao {
+  color: var(--text-color);
+  font-size: 0.81rem;
+  font-weight: 300;
+}
+
+.perfil__links, .perfil__tecnologias, .perfil__experiencias, .perfil__educacao {
+  background: var(--bg-cards);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 1rem;
+}
+
+.links__lista-icones {
+  list-style: none;
+}
+.links__lista-icones img {
+  margin-right: 1rem;
+}
+.links__lista-icones li {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.tecnologias__titulo, .experiencias__titulo, .educacao__titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.7rem;
+}
+
+.tecnologias__lista {
+  list-style: none;
+  font-size: 0.62rem;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tecnologias__item {
+  background: var(--bg-techs);
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+.experiencias__lista, .educacao__lista {
+  color: var(--text-color);
+  font-size: 0.87rem;
+  font-weight: 700;
+}
+
+.experiencias__lista-desc, .educacao__lista-desc {
+  color: var(--text-color);
+  font-size: 0.75rem;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.educacao__lista-desc li:nth-child(2) {
+  font-weight: 700;
+}
+
+.atividades {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.atividades__projetos {
+  align-items: center;
+  background: var(--bg-cards);
+  color: var(--text-color);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 5.37rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+}
+@media screen and (max-width:768px) {
+  .atividades {
+    width: 100%;
+  }
+  .atividades__projetos {
+    width: 100%
+  }
+}
+
+.projetos__nome-titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.projetos__ver-todos {
+  font-size: 0.87rem;
+  font-weight: 400;
+}
+
+.projetos__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projetos__item {
+  list-style: none;
+}
+
+.projetos__projeto {
+  background: var(--bg-cards);
+  color: var(--text-color);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+  text-decoration: none;
+  width: 27rem;
+}
+
+.item__titulo-projeto {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.item__titulo-projeto img {
+  width: 1.25rem;
+  margin-right: 1rem;
+}
+
+.item__descricao-projeto, 
+.item__git-branch-projeto, 
+.item_estrelas-projeto, 
+.item__qtd-tecnologia {
+  align-items: center;
+  display: flex;
+  font-size: 0.87rem;
+  margin-bottom: 1rem;
+}
+
+.item__git-branch-projeto img, 
+.item_estrelas-projeto img, 
+.item__qtd-tecnologia figure {
+  margin-right: 0.5rem;
+}
+
+.item__git-branch-projeto img {
+  width: 1.25rem;
+}
+
+.item_estrelas-projeto {
+  margin-right: 1rem;
+}
+.item_estrelas-projeto img {
+  width: 1rem;
+}
+
+.item__qtd-tecnologia {
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.item__qtd-tecnologia figure {
+  background: #E7DE79;
+  border-radius: 100%;
+  border: 2px solid #837E9F;
+  width: 0.93rem;
+  height: 0.93rem;
+}
+
+.atividades__posts-recentes {
+  align-items: center;
+  background: var(--bg-cards);
+  color: var(--text-color);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 5.37rem;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+}
+.posts__lista {
+  list-style: none;
+}
+
+.posts__post {
+  background: var(--bg-cards);
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+}
+
+.posts__post img{
+  margin-right: 1rem;
+  border: none;
+}
+
+.post__titulo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.post__data {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.post__conteudo {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.post__lista-hastag {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.post__lista-hastag li {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width:768px) {
+  .posts__post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post__titulo, .post__data, .post__conteudo {
+    display: flex;
+  }
+}
